@@ -1,9 +1,10 @@
+#importing libraries
 from tkinter import *
 from datetime import datetime
 from tkinter.filedialog import askopenfilename,asksaveasfilename
 from tkinter import messagebox
 
-
+#defining functions
 def save():
     global saved_text
     x=messagebox.askyesno("Save?","Do you want to leave this program?")
@@ -92,11 +93,11 @@ def new_window():
     global text
     text.delete("1.0",END)
 
-
+#making the actual window
 window=Tk()
 window.geometry("600x500")
 
-
+#making the menubar
 menubar=Menu(window)
 
 text=Text(height=100,font="Consolas")
