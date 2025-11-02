@@ -11,11 +11,6 @@ def save():
     if x==True:
         window.destroy()
        
-
-
-
-
-
 def Open():
     file_path=askopenfilename(filetypes=[("Text Files","*.text"),("All Files","*.*")])
     if file_path:
